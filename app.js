@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var AWS = require('aws-sdk');
 // For dev purposes only
-AWS.config.update({ accessKeyId: 'AKIAIIJ2BMN7XN6FREMA', secretAccessKey: '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' });
+AWS.config.loadFromPath('rootkey.csv');
 var fs = require('fs');
 
 var routes = require('./routes/index');
