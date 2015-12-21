@@ -8,18 +8,15 @@ block content
           a(href='#') 
             i.fa.fa-music.pull-left
             h1.pull-left MUSIC
-      div.col-lg-10.col-md-10
-        div.nav-bar.pull-left
-          a.hidden(href='#')
-            i.fa.fa-outdent.fa-lg
-          a.active(href='#')
-            i.fa.fa-indent.fa-lg
+      div.col-lg-8.col-md-8
 
         div.search-area.pull-left
-          form(method='post', src='#')
-            button(type='submit')
-              i.fa.fa-search
-            input(type='text', name='search', value='', class='txt-search', placeholder='Search songs, albums...')
+            form(method='post', src='#')
+              input(type='text', name='search', value='', class='txt-search', placeholder='Search songs, albums...')
+              button(type='submit')
+                i.fa.fa-search
+      div.col-lg-2.col-md-2
+        strong Phuongpt
 
   section.container-are
     section.container-fluid
@@ -126,26 +123,8 @@ block content
                       i.fa.fa-fordward
                   li
                     a(href='#')
-                      i.list
-                      ul
-                        li
-                          a
-                            i.fa.fa-play
-                            <strong>Bang Bang</strong> by Jesses
-                          a.btn-closes
-                            i.fa.fa-close
-                        li
-                          a
-                            i.fa.fa-play-circle
-                            <strong>Bang Bang</strong> by Jesses
-                          a.btn-closes
-                            i.fa.fa-close
-                        li
-                          a
-                            i.fa.fa-play
-                            <strong>Bang Bang</strong> by Jesses
-                          a.btn-closes
-                            i.fa.fa-close
+                      div#playlist
+                          audio(controls, autoplay)
                   li.progress-area bang bang
                   li.current-time 00:66
                   li.duration-time 05:34
