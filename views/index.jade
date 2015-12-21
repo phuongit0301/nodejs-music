@@ -1,0 +1,169 @@
+extends layout
+
+block content
+  header.fluid-container
+    div.row
+      div.col-lg-2.col-md-2
+        div.logo.pull-left
+          a(href='#') 
+            i.fa.fa-music.pull-left
+            h1.pull-left MUSIC
+      div.col-lg-10.col-md-10
+        div.nav-bar.pull-left
+          a.hidden(href='#')
+            i.fa.fa-outdent.fa-lg
+          a.active(href='#')
+            i.fa.fa-indent.fa-lg
+
+        div.search-area.pull-left
+          form(method='post', src='#')
+            button(type='submit')
+              i.fa.fa-search
+            input(type='text', name='search', value='', class='txt-search', placeholder='Search songs, albums...')
+
+  section.container-are
+    section.container-fluid
+      section.row
+        aside.nav-area.col-lg-2.col-md-2
+          ul
+            li
+              h1 List Music
+            li
+              a(href='#') Pop
+            li
+              a(href='#') Rock
+            li
+              a(href='#') Jazz
+            li
+              a(href='#') Classical
+            li
+              a(href='#') Discover
+            li
+              a(href='#') Country
+        section.main-area.col-lg-8.col-md-8
+          section.scrollable
+            section.row
+              h1.title Discover
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+
+              article.col-lg-2.col-md-2(dragable='true')
+                figure
+                  img(src='images/p4.jpg' alt='')
+                  figcaption
+                    a Tempered Song
+                    a.sub-caption mia
+              footer.footer-area.col-lg-12.col-md-12
+                ul
+                  li
+                    a(href='#')
+                      i.fa.fa-backward
+                  li
+                    a(href='#')
+                      i.fa.fa-play
+                  li
+                    a(href='#')
+                      i.fa.fa-fordward
+                  li
+                    a(href='#')
+                      i.list
+                      ul
+                        li
+                          a
+                            i.fa.fa-play
+                            <strong>Bang Bang</strong> by Jesses
+                          a.btn-closes
+                            i.fa.fa-close
+                        li
+                          a
+                            i.fa.fa-play-circle
+                            <strong>Bang Bang</strong> by Jesses
+                          a.btn-closes
+                            i.fa.fa-close
+                        li
+                          a
+                            i.fa.fa-play
+                            <strong>Bang Bang</strong> by Jesses
+                          a.btn-closes
+                            i.fa.fa-close
+                  li.progress-area bang bang
+                  li.current-time 00:66
+                  li.duration-time 05:34
+                  li
+                    i.fa.fa-volume-up
+                  li.volume-progress
+                    div.volume-bar
+                  li
+                    i.fa.fa-random
+                  li
+                    i.fa.fa-retweet
+
+        aside.people-connected-area.scrollable.col-lg-2.col-md-2
+          ul
+            li
+              h1 Connected
+            li
+              figure
+                img(src='#', alt='')
+                figcaption
+                  a(href='#') Pop

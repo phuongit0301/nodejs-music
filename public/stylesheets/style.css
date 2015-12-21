@@ -1,0 +1,59 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	/*color: #07E2C3;*/
+	color: #545a5f;
+}
+ul {
+	list-style: none;
+}
+img {
+	width: 100%;
+}
+a {
+	color: #545a5f;
+}
+h1 {
+	font-size: 30px;
+}
+.nav-bar .fa-outdent, .nav-bar .fa-indent {
+	color: #939aa0;
+}
+.logo {
+	background-color: #07E2C3;
+	padding: 15px 20px;
+	text-align: center;
+}
+.logo a {
+	color: #FFFFFF;
+	font-size: 30px;
+	display: inline-block;
+}
+.logo a h1 {
+	font-weight: bold;
+}
+a.hidden {
+	display: none;
+}
+.nav-bar a {
+	line-height: 62px;
+	margin: 0 20px;
+}
+.search-area {
+	position: relative;
+	width: 83%;
+}
+.search-area button {
+	border: none;
+	position: absolute;
+	outline: none;
+	background-color: transparent;
+	margin: 23px 0;
+}
+.search-area .txt-search {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 5px 0 5px 35px;
+	margin: 20px 0;
+}
