@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var AWS = require('aws-sdk');
 // For dev purposes only
 AWS.config.loadFromPath('rootkey.csv');
+AWS.config.region = 'us-west-2';
 var fs = require('fs');
 
 var routes = require('./routes/index');
