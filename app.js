@@ -6,14 +6,16 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var AWS = require('aws-sdk');
 // For dev purposes only
-AWS.config.loadFromPath('rootkey.csv');
-AWS.config.region = 'us-west-2';
-var fs = require('fs');
+AWS.config.loadFromPath('config/AwsConfig.json');
 
 var routes = require('./routes/index');
+
 var users = require('./routes/users');
+var files = require('./routes/files');
 
 var app = express();
+
+//var fs = require('fs');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/files', files);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
